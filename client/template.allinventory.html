@@ -1,0 +1,22 @@
+<div ng-controller="ListCtrl" class="col-md-12">
+	<div class="col-md-6">
+	<ul  ng-repeat="item in data.list">
+		<li>
+			<div>{{item.category }} | {{item.design}} | {{item._id}} </div>
+			<div> Product Description: {{item.description}}</div>
+		</li>
+	</ul>
+	</div>
+	<div class="col-md-6">
+	<form novalidate>
+		<div >
+			<label>Category: </label><input type="text" class="form-control" ng-model="newFurniture.category" />
+			<label>Design: </label><input type="text" class="form-control" ng-model="newFurniture.design" />
+			<label>Description: </label><input type="text" class="form-control" ng-model="newFurniture.description" />
+			<label>Image: </label><input type="text" class="form-control" ng-model="newFurniture.image" />
+			<button class="btn" type="submit" ng-click="addFurniture(newFurniture)" >Submit</button>
+		</div>
+	 </form>
+	 </div>
+	 <a ui-sref="allinventory"></a>
+</div>
