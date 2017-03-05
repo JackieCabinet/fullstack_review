@@ -3,7 +3,7 @@ var app = angular.module('myApp', ['ui.router']);
 app.config(function($stateProvider, $urlRouterProvider) {
   // 
   // For any unmatched url, redirect to /categorized
-  $urlRouterProvider.otherwise("/categorized");
+  //$urlRouterProvider.otherwise("/categorized");
   // 
   // Now set up the states 
   $stateProvider
